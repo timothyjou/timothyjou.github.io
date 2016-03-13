@@ -22,6 +22,8 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Animate CSSS-->
+    <link href="css/animate.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,6 +31,17 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    <script src="js/jquery.js"></script>
+    <script src = "js/jquery.stellar.js"></script>
+    <script>
+    $.stellar():
+    </script>
+
 </head>
 
 <body id="page-top" class="index">
@@ -75,15 +88,16 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container" data-stellar-background-ratio="0.5">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-text">
                         <br><br><br><br><br>
-                        <span class="name">Timothy Jou</span>
+                        <span class="name fadeInDown animated" >Timothy Jou</span>
                         <hr width = "50%" size = "">
-                        <span class="skills">A<sup>+</sup> Software Developer </span>
-                        <br><br><br><br><br>
+                        <br>
+                        <span class="skills fadeInDown animated">A<sup>+</sup> Software Developer </span>
+                        <br><br><br>
                     </div>
                 </div>
             </div>
@@ -92,11 +106,11 @@
     <!-- End Header -->
     <!-- Profile Section -->
     <section id="about">
-        <div class="container">
+        <div class="container wow fadeInDown animated" >
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>About ME</h2>
-                    <hr class = "gradientline">
+                    <hr class = "gradientlinecolor">
                 </div>
             </div>
             <br><br>
@@ -121,57 +135,33 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Education</h2>
-                    <hr class = "gradientline">
+                    <hr class = "gradientlinecolor">
                 </div>
             </div>
             <br>
-            <div class ="container">
+            <div class ="container" >
                 <div class='row'>
-                    <div class="col-md-4 col-md-offset-2 text-center">
-                    <img src="img/UBClogo.png" alt="" width="120" height="164">
+                    <div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+                                <img src="img/UBClogo.png" width="130" height="160">
+                                <h3>University of British Columbia</h3>
+                                <p>Bachelors of Computer Science</p>
+                                <p>Sep 2015 - May 2018 (expected)</p>
                     </div>
-                    <div class="col-md-6">
-                        <div>
-                            <h3 class="text-uppercase">University of British Columbia</h3>
-                            <p><i>Bachelors of Computer Science - 2015-2018</i></p>
-                            <p>UBC Science Co-Op Program</p>
-                            <p>Computer Science/ MATH GPA: 85.6%</p>
-                            <br>
-                            <h3>Relevant Courses</h3>
-                            <p>CPSC 210 - Software Construction</p>
-                            <p>CPSC 221 - Basic Algorithms and Data Structures</p>
-                        </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+                                <img src="img/UBClogo.png" width="130" height="160">
+                                <h3>University of British Columbia</h3>
+                                <p>Bachelors of Science</p>
+                                <p><i> Major in Microbiology and Immunology</i></p>
+                                <p>Sep 2011 - May 2015</p>
                     </div>
-                </div>
-                <br><br>
-                <div class='row'>
-                    <div class="col-md-4 col-md-offset-2 text-center">
-                    <img src="img/UBClogo.png" alt="" width="120" height="164">
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+                                <img src="img/semilogo2.png" width="130" height="160">
+                                <h3>Semiahmoo Secondary</h3>
+                                <p>International Baccalaureate Diploma</p>
+                                <p>Sep 2006 - May 2011</p>
                     </div>
-                    <div class="col-md-6">
-                        <div>
-                            <h3 class="text-uppercase">University of British Columbia</h3>
-                            <p><i>Bachelors of Science - 2011-2015</i></p>
-                            <p><i> Major in Microbiology and Immunology</i></p>
-                            <p>GPA: 80.8%</p>
-                            <br>
-                            <h3>Relevant Courses</h3>
-                            <p>MICB 405 - BioInformatics</p>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-                <div class='row'>
-                    <div class="col-md-4 col-md-offset-2 text-center">
-                    <img src="img/semilogo2.png" alt="" width="200">
-                    </div>
-                    <div class="col-md-6">
-                        <div>
-                            <h3 class="text-uppercase">Semiahmoo Secondary</h3>
-                            <p><i>International Baccalaureate Diploma- 2006-2011</i></p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -183,7 +173,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>EXPERIENCE</h2>
-                    <hr class = "gradientline">
+                    <hr class = "gradientlinecolor">
                 </div>
             </div>
                 <div class = "row">
@@ -216,7 +206,7 @@
                 </div>
             
             <div class="row">
-                <div class="col-md-4 portfolio-item">
+                <div class="col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -227,61 +217,21 @@
                         <img src="img/portfolio/mindthegap.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-            </div>
-        </div>
-                <!--</div>
-                <div class="col-sm-4 portfolio-item">
+
+                <div class="col-sm-6 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
+                                <p>Project Euler </p>
                             </div>
                         </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/mathematics.jpeg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-                    </a>
-                </div>
+
             </div>
-        </div>-->
+        </div>
     </section>
     <!-- End Projects Section -->
 
@@ -425,7 +375,9 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!--div2> <!-->
+     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -437,21 +389,24 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Project Euler</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/mathematics.jpeg" class="img-responsive img-centered" alt="">
+                            <ul>
+                            <li>Implemented methods to parse station location using JSON and station arrival times from the Tfl API</li>
+                            <li>Implemented methods to display the stations, lines , and closest station based on user's location </li>
+                            </ul>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                <li>Platform:
+                                    <strong>JAVA
                                     </strong>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                <li>Duration:
+                                    <strong>Sep 2015 -Dec 2015
                                     </strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <li>Language / Tools:
+                                    <strong>IntelliJ
                                     </strong>
                                 </li>
                             </ul>
@@ -462,6 +417,7 @@
             </div>
         </div>
     </div>
+
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">

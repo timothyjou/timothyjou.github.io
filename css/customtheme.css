@@ -203,24 +203,25 @@ section h2 {
 }
 
 #about {
-    color: #fff;
-    background: #e6af4b;
-}
-#education{
-    color: #fff;
+    color: #2c3e50;
     background: #bcd5d1;
 }
+#education{
+    color: #2c3e50;
+    background: #dbe9d8;
+
+}
 #experience{
-    color: #fff;
-    background: #f79f79;
+    color: #2c3e50;
+    background: #c2d4d8;
 }
 #portfolio{
     color:#2c3e50;
-    background: #bbc4ef;
+    background: #f2efe8;
 }
 #contact{
     color:#2c3e50;
-    background:#f2efe8;
+    background:#b0aac2;
 }
 
 section.success a,
