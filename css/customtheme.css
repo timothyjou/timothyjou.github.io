@@ -58,6 +58,13 @@ hr.gradientlinecolor {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #2c3e50, rgba(0, 0, 0, 0));
 }
 
+hr.gradientlinecolorwhite {
+    color:#fff;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ffffff, rgba(0, 0, 0, 0));
+}
+
 hr.star-light:after,
 hr.star-primary:after {
     content: "\f005";
@@ -96,6 +103,7 @@ header {
     color: #fff;
     background-image: url("img/waves2.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;  /* Kinda like Prallax */
     background-size: 100% 100%;
     background-position: center center;
 }
@@ -202,22 +210,29 @@ section h2 {
     font-size: 3em;
 }
 
+/*Div Colour */
 #about {
     color: #2c3e50;
-    background: #bcd5d1;
+    background: #e6fffa;
 }
 #education{
-    color: #2c3e50;
-    background: #dbe9d8;
+    /*color: #2c3e50;
+    background: #fffae6;*/
+    background-image: url("img/ubc_aerial_edit2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center center;
+    color: #FFFFFF;
 
 }
 #experience{
     color: #2c3e50;
-    background: #c2d4d8;
+    background: #cce6ff;
 }
 #portfolio{
     color:#2c3e50;
-    background:#b0aac2;
+    background: #ccffff;
 }
 #contact{
     color:#2c3e50;
