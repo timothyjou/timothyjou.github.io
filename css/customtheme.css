@@ -130,12 +130,12 @@ header .intro-text .name {
     display: block;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 500;
 }
 
 header .intro-text .skills {
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: 300;
 }
 
@@ -153,6 +153,7 @@ header .intro-text .skills {
         font-size: 1.75em;  /* deafutl = 1.75 em*/
     }
 }
+
 
 @media(min-width:768px) {
     .navbar-fixed-top {
@@ -304,7 +305,7 @@ section.success a.active {
     height: 100%;
     opacity: 0;
     background: rgba(24,188,156,.9);
-    -webkit-transition: all ease .5s;
+    -webkit-transition: all ease .5s;  /*allow smooth transitions*/
     -moz-transition: all ease .5s;
     transition: all ease .5s;
 }
@@ -327,6 +328,7 @@ section.success a.active {
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
 }
+
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
@@ -510,6 +512,13 @@ footer .footer-below {
     margin: 0;
     font-size: 3em;
 }
+.portfolio-modal .modal-content h3 {
+    margin: 0;
+    font-size: 2em;
+}
+.portfolio-modal .modal-content p,.respons-ul {
+    text-align: left;
+}
 
 .portfolio-modal .modal-content img {
     margin-bottom: 30px;
@@ -517,6 +526,7 @@ footer .footer-below {
 
 .portfolio-modal .modal-content .item-details {
     margin: 30px 0;
+    text-align: center;
 }
 
 .portfolio-modal .close-modal {
