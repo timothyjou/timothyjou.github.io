@@ -35,3 +35,13 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// skills bar
+$(function(){
+    $('.skillbar').each(function(){
+        $(this).find('.skillbar-bar').animate({
+            width:$(this).attr('data-percent')
+        },6000);
+    });
+});
+
